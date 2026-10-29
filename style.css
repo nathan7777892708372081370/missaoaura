@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #020711;
+  background-image: url("fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: min(700px, 100%);
+  margin: 40px auto;
+  padding: 20px;
+}
+
+#tela-cadastro,
+#tela-perguntas {
+  padding: 30px;
+  background: rgba(0, 10, 25, 0.92);
+  border: 1px solid #52c8ff;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(82, 200, 255, 0.25);
+}
+
+h1,
+#nome-perfil {
+  color: #52c8ff;
+  text-align: center;
+}
+
+p {
+  line-height: 1.6;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="date"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #52c8ff;
+  border-radius: 8px;
+  background: #071629;
+  color: white;
+}
+
+fieldset {
+  margin: 22px 0;
+  padding: 18px;
+  border: 1px solid #287da8;
+  border-radius: 10px;
+}
+
+legend {
+  padding: 0 8px;
+  color: #70d7ff;
+}
+
+fieldset label {
+  padding: 8px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #52c8ff;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 25px;
+  border: 0;
+  border-radius: 8px;
+  background: #087bb5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #109bdc;
+}
+
+#resultado {
+  margin-top: 20px;
+  padding: 24px;
+  text-align: center;
+  background: rgba(5, 25, 45, 0.95);
+  border: 1px solid #52c8ff;
+  border-radius: 14px;
+}
+
+#imagem-perfil {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  max-height: 420px;
+  object-fit: contain;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+#descricao-perfil {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  #tela-cadastro,
+  #tela-perguntas {
+    padding: 18px;
+  }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Missão Aura</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- TELA DE CADASTRO -->
+    <section id="tela-cadastro">
+
+      <h1>MISSÃO AURA</h1>
+      <p>Prepare-se para descobrir seu perfil espacial!</p>
+
+      <form id="form-cadastro">
+
+        <label for="nome">Nome do tripulante</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite seu nome"
+          required
+        >
+
+        <label for="nascimento">Data de nascimento</label>
+        <input
+          type="date"
+          id="nascimento"
+          name="nascimento"
+          required
+        >
+
+        <button type="submit">ENTRAR NA MISSÃO</button>
+
+      </form>
+
+    </section>
+
+    <!-- TELA DAS PERGUNTAS -->
+    <section id="tela-perguntas" hidden>
+
+      <h1>ANÁLISE DE PERFIL</h1>
+
+      <p id="mensagem-tripulante"></p>
+
+      <form id="form-perguntas">
+
+        <fieldset>
+          <legend>1. O que você mais gosta de fazer?</legend>
+
+          <label><input type="radio" name="q1" value="A" required> Construir e consertar coisas</label>
+          <label><input type="radio" name="q1" value="B"> Pesquisar e descobrir respostas</label>
+          <label><input type="radio" name="q1" value="C"> Explorar lugares novos</label>
+          <label><input type="radio" name="q1" value="D"> Organizar e planejar atividades</label>
+          <label><input type="radio" name="q1" value="E"> Criar ideias diferentes</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>2. Em uma missão espacial, o que você escolheria fazer?</legend>
+
+          <label><input type="radio" name="q2" value="A" required> Consertar a nave</label>
+          <label><input type="radio" name="q2" value="B"> Investigar um planeta</label>
+          <label><input type="radio" name="q2" value="C"> Explorar o território</label>
+          <label><input type="radio" name="q2" value="D"> Coordenar a equipe</label>
+          <label><input type="radio" name="q2" value="E"> Inventar uma nova tecnologia</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>3. Qual dessas características combina mais com você?</legend>
+
+          <label><input type="radio" name="q3" value="A" required> Prático</label>
+          <label><input type="radio" name="q3" value="B"> Curioso</label>
+          <label><input type="radio" name="q3" value="C"> Aventureiro</label>
+          <label><input type="radio" name="q3" value="D"> Organizado</label>
+          <label><input type="radio" name="q3" value="E"> Criativo</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>4. Como você resolveria um problema difícil?</legend>
+
+          <label><input type="radio" name="q4" value="A" required> Tentaria consertar na prática</label>
+          <label><input type="radio" name="q4" value="B"> Pesquisaria para entender</label>
+          <label><input type="radio" name="q4" value="C"> Testaria possibilidades diferentes</label>
+          <label><input type="radio" name="q4" value="D"> Criaria um plano de ação</label>
+          <label><input type="radio" name="q4" value="E"> Inventaria uma solução original</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>5. Qual seria seu maior objetivo na missão?</legend>
+
+          <label><input type="radio" name="q5" value="A" required> Manter todos os equipamentos funcionando</label>
+          <label><input type="radio" name="q5" value="B"> Descobrir os segredos do universo</label>
+          <label><input type="radio" name="q5" value="C"> Conhecer um mundo desconhecido</label>
+          <label><input type="radio" name="q5" value="D"> Garantir que a missão seja bem organizada</label>
+          <label><input type="radio" name="q5" value="E"> Criar algo que nunca existiu</label>
+        </fieldset>
+
+        <button type="submit">FINALIZAR RESPOSTAS</button>
+
+      </form>
+
+      <!-- RESULTADO DO PERFIL -->
+      <div id="resultado" hidden>
+        <h2 id="nome-perfil"></h2>
+        <img id="imagem-perfil" src="" alt="Imagem do perfil escolhido">
+        <p id="descricao-perfil"></p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- BIBLIOTECA P5.JS E CÓDIGO DO PROJETO -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
+  <script src="sketch.js"></script>
+
+</body>
+</html>
